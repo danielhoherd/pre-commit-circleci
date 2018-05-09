@@ -45,8 +45,8 @@ To contribute to pre-commit-circleci, clone this repo locally and commit your co
 Author
 ------
 
-> GitHub [@danielhoherd](https://github.com/danielhoherd)
-> GitHub [@detailyang](https://github.com/detailyang) - [pre-commit shell-lint](https://github.com/detailyang/pre-commit-shell) was used as a template for pre-commit circleci-validate.
+- GitHub [@danielhoherd](https://github.com/danielhoherd)
+- GitHub [@detailyang](https://github.com/detailyang) - [pre-commit shell-lint](https://github.com/detailyang/pre-commit-shell) was used as a template for pre-commit circleci-validate.
 
 
 License
