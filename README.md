@@ -1,3 +1,5 @@
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/circleci/local-cli/master/LICENSE)
+
 # pre-commit-circleci
 
 pre-commit-circleci is a [pre-commit](https://github.com/pre-commit/pre-commit) component, which wraps [circleci](https://github.com/circleci/local-cli) to check CircleCI config yaml files.
