@@ -7,6 +7,8 @@ set -o nounset
 DEBUG=${DEBUG:=0}
 [[ $DEBUG -eq 1 ]] && set -o xtrace
 
+exec < /dev/tty
+
 echo 'Begin circleci config validation'
 
 if ! command -v circleci &>/dev/null; then
