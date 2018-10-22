@@ -1,4 +1,5 @@
+repos:
 -   repo: /Users/daniel.hoherd/code/pre-commit-circleci
-    sha: 148568164f52e1118c76019428635eb0d1b009e8
+    rev: 148568164f52e1118c76019428635eb0d1b009e8
     hooks:
     -   id: circleci-validate
