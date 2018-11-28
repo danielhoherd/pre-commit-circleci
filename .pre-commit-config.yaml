@@ -1,5 +1,5 @@
 repos:
 -   repo: git@github.com:danielhoherd/pre-commit-circleci.git
-    rev: c9d38edc2b366657c91a4b08a467294dee06f58c
+    rev: v0.0.2
     hooks:
     -   id: circleci-validate
