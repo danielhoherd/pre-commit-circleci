@@ -1,5 +1,9 @@
 repos:
--   repo: git@github.com:danielhoherd/pre-commit-circleci.git
+  - repo: git@github.com:danielhoherd/pre-commit-circleci.git
     rev: v0.0.2
     hooks:
-    -   id: circleci-validate
+      - id: circleci-validate
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.13.0
+    hooks:
+      - id: yamllint
