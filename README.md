@@ -1,5 +1,13 @@
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/circleci/local-cli/master/LICENSE)
 
+# DEPRECATION NOTICE and call for further development
+
+This repo is no longer being maintained since I no longer use Circle-CI.
+
+[The upstream project that pre-commit hook relies on](https://github.com/circleci/local-cli) has also been deprecated and replaced with <https://github.com/CircleCI-Public/circleci-cli>.
+
+If you use Circle-CI and find this project useful, please consider forking this project and making it work with the new circleci-cli. If you do so, open a ticket here and I will link to your project.
+
 # pre-commit-circleci
 
 pre-commit-circleci is a [pre-commit](https://github.com/pre-commit/pre-commit) component, which wraps [circleci](https://github.com/circleci/local-cli) to check CircleCI config yaml files.

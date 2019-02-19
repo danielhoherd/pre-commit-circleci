@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "This pre-commit hook is DEPRECATED. Please see https://github.com/danielhoherd/pre-commit-circleci for more info."
+
 set -o errexit
 set -o pipefail
 set -o nounset
