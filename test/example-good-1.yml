@@ -21,11 +21,6 @@ jobs:
 
     working_directory: ~/my-project
 
-    branches:
-      ignore:
-        - develop
-        - /feature-.*/
-
     steps:
       - checkout
 
