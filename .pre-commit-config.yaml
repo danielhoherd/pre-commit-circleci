@@ -1,9 +1,5 @@
----
+# Don't use this config for your own repositories. See "Installation" in README.md.
 repos:
-  - repo: git@github.com:danielhoherd/pre-commit-circleci.git
-    rev: v0.0.3
-    hooks:
-      - id: circleci-validate
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.15.0
     hooks:

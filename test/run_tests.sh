@@ -1,5 +1,7 @@
 #! /bin/bash
 
+set -x
+
 command -v circleci &> /dev/null || {
   echo "are you sure you have installed circleci?"
   exit 1
@@ -10,15 +12,17 @@ tempdir="${HOME}/temp/circleci-validate-$(date +%s)"
 mkdir -p "${tempdir}" || exit 1
 cp -r . "${tempdir}"
 cd "${tempdir}" || exit 1
-git add .
-git commit -m "Test commit"
 
 cat << EOS > .pre-commit-config.yaml
--   repo: $(pwd)
-    sha: $(git rev-parse HEAD)
+repos:
+  - repo: $(pwd)
+    rev: $(git rev-parse HEAD)
     hooks:
-    -   id: circleci-validate
+      - id: circleci-validate
 EOS
+
+git add .
+git commit -m "Test commit"
 
 [ -d .circleci ] && rm -rf .circleci
 mkdir -p .circleci
